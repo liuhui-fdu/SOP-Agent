@@ -1,0 +1,113 @@
+{
+  "data_dir": "data",
+  "host": "127.0.0.1",
+  "port": 8000,
+  "search": {
+    "top_k": 10,
+    "keyword_weight": 1.0,
+    "semantic_weight": 1.0,
+    "semantic_concepts": {
+      "backend_service_failure": [
+        "服务器",
+        "服务",
+        "挂了",
+        "不可用",
+        "超时",
+        "OOM",
+        "OutOfMemoryError",
+        "Pod",
+        "Kubernetes",
+        "后端",
+        "熔断",
+        "降级",
+        "核心业务链路"
+      ],
+      "sre_infra_failure": [
+        "SRE",
+        "K8s",
+        "Kubernetes",
+        "集群",
+        "监控",
+        "告警",
+        "容量",
+        "故障响应",
+        "服务不可用",
+        "Pod",
+        "节点"
+      ],
+      "security_incident": [
+        "黑客",
+        "攻击",
+        "入侵",
+        "安全",
+        "漏洞",
+        "SQL注入",
+        "XSS",
+        "DDoS",
+        "威胁",
+        "应急响应"
+      ],
+      "database_replication": [
+        "数据库",
+        "DBA",
+        "主从",
+        "复制",
+        "延迟",
+        "慢查询",
+        "连接池",
+        "Binlog",
+        "恢复",
+        "MySQL"
+      ],
+      "ai_model_quality": [
+        "机器学习",
+        "模型",
+        "算法",
+        "AI",
+        "推荐",
+        "质量下降",
+        "推理",
+        "GPU",
+        "特征",
+        "召回",
+        "排序"
+      ],
+      "frontend_cdn": [
+        "前端",
+        "页面",
+        "白屏",
+        "CDN",
+        "资源加载",
+        "JavaScript",
+        "兼容性",
+        "性能"
+      ],
+      "network_cdn_dns": [
+        "网络",
+        "CDN",
+        "DNS",
+        "节点",
+        "负载均衡",
+        "DDoS",
+        "解析",
+        "回源"
+      ],
+      "p0_incident": [
+        "P0",
+        "故障",
+        "响应流程",
+        "升级",
+        "战争室",
+        "War Room",
+        "影响范围",
+        "技术负责人",
+        "恢复"
+      ]
+    }
+  },
+  "agent": {
+    "max_steps": 6,
+    "llm_provider": "mock"
+  }
+}
+

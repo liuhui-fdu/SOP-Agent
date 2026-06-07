@@ -1,0 +1,23 @@
+name: question-1-ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run tests
+        working-directory: question-1
+        run: python -m unittest discover -s tests
+      - name: Run extended tests with coverage
+        working-directory: question-1
+        run: python scripts/coverage_test2.py
+      - name: Run README verification checks
+        working-directory: question-1
+        run: python scripts/verify.py
